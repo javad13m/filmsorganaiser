@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './MainPage.css';
 import Header from '../../components/Header/Header';
 import SearchBox from '../../components/SearchBox/SearchBox';
 import Movies from '../../components/Movies/Movies';
 import Favorites from '../../components/Favorites/Favorites';
 
-class MainPage extends Component {
-    render() { 
+const MainPage =()=> {
+  
         return (
             <div className="main-page">
                 <Header />
@@ -25,7 +25,7 @@ class MainPage extends Component {
                 </main>
             </div>
         );
-    }
+    
 }
  
 export default MainPage;
